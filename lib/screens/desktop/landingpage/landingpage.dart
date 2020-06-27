@@ -34,9 +34,9 @@ class _LandingPageState extends State<LandingPage> {
   @override
   Widget build(BuildContext context) {
     return AnimatedSwitcher(
-      duration: Duration(milliseconds: 1000),
-      switchInCurve: Curves.easeIn,
-      switchOutCurve: Curves.easeOut,
+      duration: Duration(seconds: 3),
+      switchInCurve: Curves.easeInOutCubic,
+      switchOutCurve: Curves.easeInOutCubic,
       transitionBuilder: (child, animation) {
         return FadeTransition(opacity: animation, child: child);
       },

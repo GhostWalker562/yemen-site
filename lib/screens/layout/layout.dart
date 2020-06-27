@@ -12,7 +12,7 @@ class Wrapper extends StatelessWidget {
     SizeConfig().init(context);
     return Scaffold(
       body: ScreenTypeLayout(
-        mobile: Text("TO BE DONE"),
+        mobile: Text("YEARS BEFORE"),
         desktop: debug ? MainScrollView() : LandingPage(debug:debug),
       ),
     );

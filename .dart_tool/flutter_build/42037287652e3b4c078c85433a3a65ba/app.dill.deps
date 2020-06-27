@@ -4,9 +4,11 @@ file:///A:/Flutter_Projects/yemen/lib/core/SizeConfig.dart
 file:///A:/Flutter_Projects/yemen/lib/main.dart
 file:///A:/Flutter_Projects/yemen/lib/screens/desktop/intro/intro.dart
 file:///A:/Flutter_Projects/yemen/lib/screens/desktop/landingpage/landingpage.dart
-file:///A:/Flutter_Projects/yemen/lib/screens/desktop/mainscrollview/components/background/components/animatedimage.dart
-file:///A:/Flutter_Projects/yemen/lib/screens/desktop/mainscrollview/components/background/components/dash.dart
-file:///A:/Flutter_Projects/yemen/lib/screens/desktop/mainscrollview/components/background/past.dart
+file:///A:/Flutter_Projects/yemen/lib/screens/desktop/mainscrollview/components/past/components/animatedimage.dart
+file:///A:/Flutter_Projects/yemen/lib/screens/desktop/mainscrollview/components/past/components/dash.dart
+file:///A:/Flutter_Projects/yemen/lib/screens/desktop/mainscrollview/components/past/past.dart
+file:///A:/Flutter_Projects/yemen/lib/screens/desktop/mainscrollview/components/timeline/components/marker.dart
+file:///A:/Flutter_Projects/yemen/lib/screens/desktop/mainscrollview/components/timeline/timeline.dart
 file:///A:/Flutter_Projects/yemen/lib/screens/desktop/mainscrollview/mainscrollview.dart
 file:///A:/Flutter_Projects/yemen/lib/screens/layout/layout.dart
 file:///A:/Flutter_Projects/yemen/lib/theme/original.dart

@@ -7,10 +7,18 @@ class CustomThemes {
         bodyText1:
             GoogleFonts.playfairDisplay(fontSize: 24, color: Colors.white),
         headline1:
-            GoogleFonts.playfairDisplay(fontSize: 72, color: Colors.white)),
+            GoogleFonts.playfairDisplay(fontSize: 72, color: Colors.white)
+            
+            
+            ),
     accentTextTheme: TextTheme(
         bodyText1:
-            GoogleFonts.playfairDisplay(fontSize: 24, color: Colors.black)),
+            GoogleFonts.playfairDisplay(fontSize: 24, color: Colors.black),
+        headline1:
+            GoogleFonts.playfairDisplay(fontSize: 72, color: Colors.black)
+            
+            
+            ),
     visualDensity: VisualDensity.adaptivePlatformDensity,
   );
 }
