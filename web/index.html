@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <meta name="description" content="Yemen - 2020 Competition Submission - Spreading awareness on an ongoing crisis">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -12,12 +13,55 @@
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+  <link rel="shortcut icon" type="image/png" href="favicon.png" />
 
-  <title>yemen</title>
+  <title>Yemen</title>
   <link rel="manifest" href="manifest.json">
+
+  <style type="text/css">
+    #loader-container {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      text-align: center;
+      color:crimson;
+      font-size: 16pt;
+    }
+
+    .loader-div {
+      width: calc(100%-16px);
+      height: calc(100%-16px);
+      border: 8px solid#162534;
+      border-top: 0px #09f;
+      border-radius: 50%;
+      animation: rotate 3s ease-in-out infinite;
+    }
+
+    @keyframes rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
 </head>
-<body>
+
+<body style="background-color:bisque;">
+
+  <div id="loader-container">
+    Loading Yemen
+    <div class="loader-div">
+      <div class="loader-div">
+        <div class="loader-div">
+          <div class="loader-div">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
@@ -30,4 +74,5 @@
   </script>
   <script src="main.dart.js" type="application/javascript"></script>
 </body>
+
 </html>

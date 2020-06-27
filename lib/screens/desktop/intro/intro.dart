@@ -13,21 +13,29 @@ class Intro extends StatelessWidget {
       color: Colors.black,
       height: SizeConfig.blockSizeVertical * 100,
       width: SizeConfig.blockSizeHorizontal * 100,
-      child: Row(
-        
+      child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
-            "Yemen",
-            style: Theme.of(context).textTheme.headline1,
+          Row(
+            
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                "Yemen",
+                style: Theme.of(context).textTheme.headline1,
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: SizeConfig.blockSizeHorizontal * 2, vertical: SizeConfig.blockSizeVertical * 2),
+                decoration: BoxDecoration(border: Border.all(color:Colors.white54,width:1)),
+                child: FlatButton(
+                    child: Text("BEGIN", style: GoogleFonts.oswald(color:Colors.white,fontSize:24)),
+                    onPressed: onPressed),
+              )
+            ],
+
           ),
-          Container(
-            margin: EdgeInsets.symmetric(horizontal: SizeConfig.blockSizeHorizontal * 2, vertical: SizeConfig.blockSizeVertical * 2),
-            decoration: BoxDecoration(border: Border.all(color:Colors.white54,width:1)),
-            child: FlatButton(
-                child: Text("BEGIN", style: GoogleFonts.oswald(color:Colors.white,fontSize:24)),
-                onPressed: onPressed),
-          )
+
+          Text("ADVISORY WARNING",style: Theme.of(context).primaryTextTheme.bodyText2,)
         ],
       ),
     );

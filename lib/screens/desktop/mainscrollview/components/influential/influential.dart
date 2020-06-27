@@ -68,7 +68,7 @@ List<Widget> returnChildren(context) {
           horizontal: SizeConfig.blockSizeHorizontal * 5),
       alignment: Alignment.center,
       child: Text(
-        "SUFFERING",
+        "TODAY",
         style: GoogleFonts.oswald(
             fontSize: 72, color: Colors.white, fontWeight: FontWeight.w300),
       ),

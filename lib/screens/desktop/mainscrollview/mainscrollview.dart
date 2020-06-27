@@ -7,6 +7,7 @@ import 'package:yemen/core/SizeConfig.dart';
 import 'package:yemen/screens/desktop/mainscrollview/components/timeline/timeline.dart';
 import 'package:yemen/screens/desktop/mainscrollview/components/influential/influential.dart';
 import 'package:yemen/screens/desktop/mainscrollview/components/covid/covid.dart';
+import 'package:yemen/screens/desktop/mainscrollview/components/contact/contact.dart';
 import 'components/past/past.dart';
 
 class MainScrollView extends StatefulWidget {
@@ -95,6 +96,7 @@ class _MainScrollViewState extends State<MainScrollView> {
             behavior: MyBehavior(),
             child: ListView(
               children: [
+                
                 Container(
                   height: SizeConfig.blockSizeVertical * 100,
                 ),
@@ -106,6 +108,7 @@ class _MainScrollViewState extends State<MainScrollView> {
                 Timeline(),
                 Influential(),
                 Covid(),
+                Contact(),
               ],
             ),
           )

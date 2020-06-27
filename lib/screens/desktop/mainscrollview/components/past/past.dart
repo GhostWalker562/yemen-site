@@ -14,7 +14,7 @@ class Past extends StatelessWidget {
   final options = LiveOptions(
     delay: Duration(milliseconds: 0),
     showItemInterval: Duration(milliseconds: 0),
-    showItemDuration: Duration(seconds: 1),
+    showItemDuration: Duration(milliseconds: 750),
     visibleFraction: 0.5,
     reAnimateOnVisibility: true,
   );

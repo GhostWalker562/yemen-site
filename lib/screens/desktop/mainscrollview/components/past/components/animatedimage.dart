@@ -42,7 +42,7 @@ class BackgroundAnimatedImage extends StatelessWidget {
               height: SizeConfig.blockSizeVertical * 80,
               child: AnimateIfVisible(
                 reAnimateOnVisibility: true,
-                duration: Duration(milliseconds: 1500),
+                duration: Duration(milliseconds: 750),
                 builder: (context, animation) {
                   return SlideTransition(
                     position: Tween<Offset>(
