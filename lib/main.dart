@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yemen/screens/layout/layout.dart';
 import 'package:yemen/theme/original.dart';
 
 void main() {
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Yemen',
       theme: CustomThemes.original,
-      home: null,
+      home: Wrapper(),
     );
   }
 }
