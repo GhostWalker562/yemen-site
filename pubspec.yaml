@@ -34,6 +34,7 @@ dependencies:
   flutter_markdown: ^0.4.2
   auto_animated: any
   url_launcher: ^5.4.11
+  animate_do: ^1.7.2
 
 dev_dependencies:
   flutter_test:

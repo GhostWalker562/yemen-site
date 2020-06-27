@@ -13,7 +13,7 @@ class Timeline extends StatelessWidget {
   final options = LiveOptions(
     delay: Duration(milliseconds: 0),
     showItemInterval: Duration(milliseconds: 250),
-    showItemDuration: Duration(seconds: 2),
+    showItemDuration: Duration(seconds: 1),
     visibleFraction: 0.5,
     reAnimateOnVisibility: true,
   );
@@ -23,7 +23,7 @@ class Timeline extends StatelessWidget {
     children = returnChildren(context);
 
     return Container(
-      height: SizeConfig.blockSizeVertical * 225,
+      height: SizeConfig.blockSizeVertical * 250,
       color: Colors.white,
       child: Stack(
         children: [
@@ -60,14 +60,14 @@ Widget buildAnimatedItem(
   Animation<double> animation,
   List children,
 ) =>
-    // For example wrap with fade transition
+    
     FadeTransition(
       opacity: Tween<double>(
         begin: 0,
         end: 1,
       ).animate(
           CurvedAnimation(curve: Curves.easeInOutCubic, parent: animation)),
-      // And slide transition
+    
       child: SlideTransition(
         position: Tween<Offset>(
           begin: (index == 0 )
@@ -76,7 +76,7 @@ Widget buildAnimatedItem(
           end: Offset.zero,
         ).animate(
             CurvedAnimation(curve: Curves.easeInOutCubic, parent: animation)),
-        // Paste you Widget
+      
         child: children[index],
       ),
     );

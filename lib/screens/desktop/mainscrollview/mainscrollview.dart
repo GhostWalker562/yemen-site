@@ -5,7 +5,8 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:yemen/core/Physics.dart';
 import 'package:yemen/core/SizeConfig.dart';
 import 'package:yemen/screens/desktop/mainscrollview/components/timeline/timeline.dart';
-
+import 'package:yemen/screens/desktop/mainscrollview/components/influential/influential.dart';
+import 'package:yemen/screens/desktop/mainscrollview/components/covid/covid.dart';
 import 'components/past/past.dart';
 
 class MainScrollView extends StatefulWidget {
@@ -97,11 +98,14 @@ class _MainScrollViewState extends State<MainScrollView> {
                 Container(
                   height: SizeConfig.blockSizeVertical * 100,
                 ),
+               
                 Past(),
                 Container(
                   height: SizeConfig.blockSizeVertical * 100,
                 ),
                 Timeline(),
+                Influential(),
+                Covid(),
               ],
             ),
           )
@@ -110,5 +114,4 @@ class _MainScrollViewState extends State<MainScrollView> {
     );
   }
 }
-
 
