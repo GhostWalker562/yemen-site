@@ -41,6 +41,7 @@ class BackgroundAnimatedImage extends StatelessWidget {
               alignment: Alignment.center,
               height: SizeConfig.blockSizeVertical * 80,
               child: AnimateIfVisible(
+                reAnimateOnVisibility: true,
                 duration: Duration(milliseconds: 1500),
                 builder: (context, animation) {
                   return SlideTransition(

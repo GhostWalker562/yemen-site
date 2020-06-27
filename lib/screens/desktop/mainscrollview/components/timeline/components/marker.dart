@@ -15,7 +15,7 @@ class Marker extends StatelessWidget {
     return Container(
       margin: EdgeInsets.symmetric(
           vertical: SizeConfig.blockSizeVertical * 5,
-          horizontal: SizeConfig.blockSizeHorizontal * 5),
+          horizontal: SizeConfig.blockSizeHorizontal * 0),
       height: SizeConfig.blockSizeVertical * 20,
       child: Row(
         children: [
@@ -23,9 +23,10 @@ class Marker extends StatelessWidget {
               child: Padding(
             padding: const EdgeInsets.all(20),
             child: AutoSizeText(
+              
               flip ? desc ?? "1999" : year ?? "1999",
               textAlign: TextAlign.right,
-              style: flip ? Theme.of(context).accentTextTheme.bodyText1 : Theme.of(context).accentTextTheme.headline1,
+              style: flip ? Theme.of(context).accentTextTheme.bodyText1 : Theme.of(context).accentTextTheme.headline1, overflow: TextOverflow.visible,
             ),
           )),
           Container(
@@ -45,7 +46,7 @@ class Marker extends StatelessWidget {
                       "Nostrud consectetur consectetur fugiat sunt in incididunt duis Lorem occaecat exercitation. Excepteur nostrud elit laboris cupidatat adipisicing reprehenderit. Aliqua ea eu anim proident."
                   : desc ??
                       "Nostrud consectetur consectetur fugiat sunt in incididunt duis Lorem occaecat exercitation. Excepteur nostrud elit laboris cupidatat adipisicing reprehenderit. Aliqua ea eu anim proident.",
-              style: flip ? Theme.of(context).accentTextTheme.headline1 : Theme.of(context).accentTextTheme.bodyText1,
+              style: flip ? Theme.of(context).accentTextTheme.headline1 : Theme.of(context).accentTextTheme.bodyText1,overflow: TextOverflow.visible,
             ),
           )),
         ],

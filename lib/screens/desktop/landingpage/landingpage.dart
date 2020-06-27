@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 import 'package:yemen/screens/desktop/intro/intro.dart';
 import 'package:yemen/screens/desktop/mainscrollview/mainscrollview.dart';
 
@@ -26,7 +27,10 @@ class _LandingPageState extends State<LandingPage> {
       Intro(
         onPressed: () => setState(() => changeChild(1)),
       ),
-      MainScrollView()
+      ScreenTypeLayout(
+        mobile: MainScrollView(mobile : true),
+        desktop: widget.debug ? MainScrollView() : MainScrollView(),
+      ),
     ];
     super.initState();
   }

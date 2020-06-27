@@ -17,8 +17,9 @@ class CustomThemes {
         headline1:
             GoogleFonts.playfairDisplay(fontSize: 72, color: Colors.black)
             
-            
+
             ),
+    primaryTextTheme: TextTheme(bodyText1:GoogleFonts.playfairDisplay(fontSize: 16, color: Colors.black), ),
     visualDensity: VisualDensity.adaptivePlatformDensity,
   );
 }
