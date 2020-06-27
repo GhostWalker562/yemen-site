@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "yemencrisis",
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
