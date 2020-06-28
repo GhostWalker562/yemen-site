@@ -8,19 +8,33 @@ class Contact extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    TextStyle main = GoogleFonts.oswald(color: Colors.white,fontSize: 16);
+    TextStyle main = GoogleFonts.oswald(color: Colors.white, fontSize: 16);
     return Container(
       alignment: Alignment.center,
       height: SizeConfig.blockSizeVertical * 10,
       color: Colors.black,
       child: Column(
         children: [
-          Row(children: [
-            FlatButton(child: Text("Lead Developer",style:main),onPressed: ()=>launch("https://github.com/GhostWalker562"),),
-            FlatButton(child: Text("Researcher",style:main), onPressed: () => launch("https://github.com/kathiehuang"),),
-            FlatButton(child: Text("QOL Developer",style:main),onPressed: () => launch("https://github.com/Vivekmad000"),),
-          ],crossAxisAlignment: CrossAxisAlignment.center,mainAxisAlignment: MainAxisAlignment.spaceEvenly,),
-          Text("________ SUBMISSION 2020", style: GoogleFonts.oswald(color: Colors.red,fontSize: 16))
+          Row(
+            children: [
+              FlatButton(
+                child: Text("Lead Developer", style: main),
+                onPressed: () => launch("https://github.com/GhostWalker562"),
+              ),
+              FlatButton(
+                child: Text("Researcher", style: main),
+                onPressed: () => launch("https://github.com/kathiehuang"),
+              ),
+              FlatButton(
+                child: Text("QOL Developer", style: main),
+                onPressed: () => launch("https://github.com/Vivekmad000"),
+              ),
+            ],
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          ),
+          Text("________ SUBMISSION 2020",
+              style: GoogleFonts.oswald(color: Colors.red, fontSize: 16))
         ],
       ),
     );
