@@ -13,6 +13,7 @@ class TextImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: Colors.transparent,
       width: SizeConfig.blockSizeHorizontal * 100,
       child: Padding(
         padding: EdgeInsets.symmetric(
@@ -59,7 +60,7 @@ class TextImage extends StatelessWidget {
                 }),
             Positioned(
               right: SizeConfig.blockSizeHorizontal * 3,
-              top: SizeConfig.blockSizeVertical * 25,
+              top: SizeConfig.blockSizeVertical * 20,
               child: AnimateIfVisible(
                 reAnimateOnVisibility: true,
                 delay: Duration(milliseconds: 500),
@@ -80,12 +81,11 @@ class TextImage extends StatelessWidget {
                             curve: Curves.easeInOutCubic, parent: animation))
                         .value,
                     child: Container(
-                      width: SizeConfig.blockSizeVertical * 50,
+                      width: SizeConfig.blockSizeVertical * 70 ,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           AutoSizeText(
-
                               text, overflow: TextOverflow.visible,
                               style: Theme.of(context).textTheme.headline2),
                           AutoSizeText(person.toUpperCase(),

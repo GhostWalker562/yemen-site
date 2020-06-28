@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -11,7 +12,7 @@ class Contact extends StatelessWidget {
     TextStyle main = GoogleFonts.oswald(color: Colors.white, fontSize: 16);
     return Container(
       alignment: Alignment.center,
-      height: SizeConfig.blockSizeVertical * 10,
+      height: SizeConfig.blockSizeVertical * 15,
       color: Colors.black,
       child: Column(
         children: [
@@ -33,7 +34,7 @@ class Contact extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           ),
-          Text("________ SUBMISSION 2020",
+          AutoSizeText("HACKMANN SUBMISSION 2020",
               style: GoogleFonts.oswald(color: Colors.red, fontSize: 16))
         ],
       ),

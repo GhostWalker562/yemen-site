@@ -1,7 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:yemen/core/Physics.dart';
 import 'package:yemen/core/SizeConfig.dart';
 import 'package:yemen/screens/desktop/mainscrollview/components/timeline/timeline.dart';
@@ -29,9 +28,6 @@ class _MainScrollViewState extends State<MainScrollView> {
   Widget build(BuildContext context) {
     return NotificationListener(
       onNotification: (ev) {
-        if (ev is OverscrollNotification) {
-          return;
-        }
         if (ev is ScrollUpdateNotification) {
           setState(() {
             rateZero += -(ev.scrollDelta / 1);
@@ -48,6 +44,7 @@ class _MainScrollViewState extends State<MainScrollView> {
             }
           });
         }
+        
       },
       child: Stack(
         children: [
@@ -82,11 +79,12 @@ class _MainScrollViewState extends State<MainScrollView> {
               padding: EdgeInsets.all(
                   SizeConfig.blockSizeHorizontal * (!widget.mobile ? 20 : 1)),
               width: SizeConfig.blockSizeHorizontal * 100,
-              height: SizeConfig.blockSizeVertical * 100,
+              height: SizeConfig.blockSizeVertical * 115,
               child: Center(
                   child: AutoSizeText(
-                "The conflict in Yemen is the largest humanitarian crisis in the world. Over 24 million people—80% of the population—are in need of humanitarian assistance, including more than 12 million children. One of the Arab world’s poorest countries, Yemen has been devastated by a civil war since 2015, becoming a living hell for its citizens. This is a national crisis—and it demands our attention.",
+                "The conflict in Yemen is the largest humanitarian crisis in the world. Over 24 million people—80% of the population—are in need of humanitarian assistance, including more than 12 million children. One of the Arab world’s poorest countries, Yemen has been devastated by a civil war since 2015, becoming a living hell for its citizens. This is a national crisis—and it demands our attention.\n\n Click and drag for the best experience",
                 textAlign: TextAlign.center,
+                overflow: TextOverflow.visible,
                 style: !widget.mobile
                     ? Theme.of(context).accentTextTheme.bodyText1
                     : Theme.of(context).primaryTextTheme.bodyText1,
@@ -95,21 +93,26 @@ class _MainScrollViewState extends State<MainScrollView> {
           ),
           ScrollConfiguration(
             behavior: MyBehavior(),
-            child: ListView(
-              children: [
-                Container(
-                  height: SizeConfig.blockSizeVertical * 100,
-                ),
-                Past(),
-                Container(
-                  height: SizeConfig.blockSizeVertical * 100,
-                ),
-                Timeline(),
-                Influential(),
-                Covid(),
-                CalltoAction(),
-                Contact(),
-              ],
+            child: CupertinoScrollbar(
+                          child: ListView(
+                            
+                shrinkWrap: true,
+                children: [
+                  Container(
+                    height: SizeConfig.blockSizeVertical * 100,
+                  ),
+                  Covid(),
+                  Past(),
+                  Container(
+                    height: SizeConfig.blockSizeVertical * 100,
+                  ),
+                  Timeline(),
+                  Influential(),
+                  Covid(),
+                  CalltoAction(),
+                  Contact(),
+                ],
+              ),
             ),
           )
         ],
