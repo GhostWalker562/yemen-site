@@ -8,8 +8,8 @@ class CalltoAction extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
         child: Container(
-            padding: EdgeInsets.symmetric(horizontal: 50, vertical: 50),
-            height: SizeConfig.blockSizeVertical * 100,
+            padding: EdgeInsets.symmetric(horizontal: 50, vertical: 25),
+            height: SizeConfig.blockSizeVertical * 115,
             color: Colors.black,
             alignment: Alignment.center,
             child: Column(

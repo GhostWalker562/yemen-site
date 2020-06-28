@@ -39,6 +39,12 @@ class _CovidState extends State<Covid> {
     super.initState();
   }
 
+  @override
+  void dispose() {
+    _callback = null;
+    super.dispose();
+  }
+
   void getCases() async {
     var response = await http.post("https://covid-19.dataflowkit.com/v1/Yemen");
     setState(() {
