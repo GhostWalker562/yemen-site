@@ -101,7 +101,6 @@ class _MainScrollViewState extends State<MainScrollView> {
                   Container(
                     height: SizeConfig.blockSizeVertical * 100,
                   ),
-                  Covid(),
                   Past(),
                   Container(
                     height: SizeConfig.blockSizeVertical * 100,
